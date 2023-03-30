@@ -1,0 +1,130 @@
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    font-family: "Outfit", Arial;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    min-height: calc(100vh - 40px);
+    background-color: var(--light-grayish-blue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wrapper {
+    width: min(90%, 100em);
+    display: grid;
+    gap: 25px;
+}
+
+.card {
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header div {
+    display: inline-block;
+}
+
+.header img {
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.status {
+    opacity: 50%;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.content {
+    font-size: 1.2rem;
+    opacity: 70%;
+}
+
+.wrapper>:nth-child(1) {
+    position: relative;
+    background-color: var(--moderate-violet);
+}
+
+.wrapper>:nth-child(1) :not(img) {
+    z-index: 1;
+}
+
+.wrapper>:nth-child(1) .header img {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.wrapper>:nth-child(1)>img {
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+.wrapper>:nth-child(2) {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.wrapper>:nth-child(3) {
+    color: var(--very-dark-blackish-blue);
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper>:nth-child(4) {
+    background-color: var(--very-dark-blackish-blue);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper>:nth-child(4) img {
+    border: 4px solid hsl(263, 55%, 52%);
+}
+
+.wrapper>:nth-child(5) {
+    color: var(--very-dark-grayish-blue);
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (min-width: 1300px) {
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wrapper>:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .wrapper>:nth-child(4) {
+        grid-column: span 2;
+    }
+
+    .wrapper>:nth-child(5) {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+}
