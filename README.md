@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/MrDrut/Responsive-css-grid-layout.git)
-- Live Site URL: [Live site](https://mrdrut.github.io/Responsive-css-grid-layout/)
+- Solution URL: [https://github.com/MrDrut/Responsive-css-grid-layout.git](https://github.com/MrDrut/Responsive-css-grid-layout.git)
+- Live Site URL: [https://mrdrut.github.io/Responsive-css-grid-layout/](https://mrdrut.github.io/Responsive-css-grid-layout/)
 
 ## My process
 
